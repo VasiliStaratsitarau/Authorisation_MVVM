@@ -61,6 +61,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ly-9p-1tX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,10 +92,15 @@
                             <constraint firstItem="VVe-4S-NIF" firstAttribute="top" secondItem="zsr-WC-OgP" secondAttribute="bottom" constant="15" id="zDm-RA-21P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="C6Z-Rb-KoS" id="AHq-Ju-BgT"/>
+                        <outlet property="login" destination="VVe-4S-NIF" id="Eyk-Qa-M3R"/>
+                        <outlet property="password" destination="LEB-6V-CQC" id="6E1-oR-Qr2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="314" y="39"/>
         </scene>
     </scenes>
     <resources>
